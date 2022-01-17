@@ -1,0 +1,30 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		while (true) {
+			Console.WriteLine("This code will determine the happines of a dog using numbers");
+		Console.WriteLine("Please input The Number of small treats");
+		int smallTreat = Convert.ToInt32(Console.ReadLine());
+		Console.WriteLine("Please input number of medium treats now");
+		int MediumTreat = Convert.ToInt32(Console.ReadLine());
+		Console.WriteLine("please add ther Number of large treats now");
+		int LargeTreat = Convert.ToInt32(Console.ReadLine());
+		int Treat_sum = (smallTreat*1) + (MediumTreat*2) + (LargeTreat*3); 
+		if (Treat_sum > 10) {
+			Console.WriteLine("The dog is Happy");
+		} else {
+			Console.WriteLine("The dog is sad");
+			Console.WriteLine("do you wantto be asked these questoions again");                    // next question attempt should be one that attempts to take on problemJ2
+			String rr = Console.ReadLine();
+			if (rr == "yes") {
+				continue;
+			} else {
+				break;
+			}
+		}
+		}
+	}
+}
